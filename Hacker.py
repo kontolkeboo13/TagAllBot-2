@@ -21,12 +21,12 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**𝐈'𝐦 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [𝐌𝐑.𝐀𝐀𝐑𝐀𝐕_𝐗𝐃](https://t.me/love_birds_group) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
+    "__**𝐈'𝐦 𝐓𝐚𝐠𝐀𝐥𝐥 𝐁𝐨𝐭**, 𝐢 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐥𝐥 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 𝐈𝐧 𝐆𝐫𝐨𝐮𝐩 𝐎𝐫 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 👻\n𝐂𝐥𝐢𝐜𝐤 **/help** 𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧__\n\n 𝐅𝐨𝐥𝐥𝐨𝐰 [my channel](https://t.me/xxGRAMZ) 𝗢𝗻 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦",
     link_preview=False,
     buttons=(
       [
-        Button.url('✨𝐒𝐔𝐏𝐏𝐎𝐑𝐓', 'https://t.me/love_birds_143'),
-        Button.url('😎𝐎𝐖𝐍𝐄𝐑', 'https://t.me/AARAV_XD')
+        Button.url('✨𝐒𝐔𝐏𝐏𝐎𝐑𝐓', 'https://t.me/xxGRAMZ'),
+        Button.url('😎𝐎𝐖𝐍𝐄𝐑', 'https://t.me/Lerrdab')
       ]
     )
   )
@@ -39,8 +39,8 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('✨𝐒𝐔𝐏𝐏𝐎𝐑𝐓', 'https://t.me/love_birds_143'),
-        Button.url('😎𝐎𝐖𝐍𝐄𝐑', 'https://t.me/AARAV_XD')
+        Button.url('✨𝐒𝐔𝐏𝐏𝐎𝐑𝐓', 'https://t.me/xxGRAMZ'),
+        Button.url('😎𝐎𝐖𝐍𝐄𝐑', 'https://t.me/Lerrdab')
       ]
     )
   )
@@ -96,7 +96,7 @@ async def all(event):
     usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
     if usrnum == 5:
       if mode == "text_on_cmd":
-        txt = f"{usrtxt}\n\n{msg}\n\nMade bY @love_birds_group✌️🔥"
+        txt = f"{usrtxt}\n\n{msg}\n\nMade bY @xxGRAMZ✌️🔥"
         await client.send_message(chat_id, txt)
       elif mode == "text_on_reply":
         await msg.reply(usrtxt)
@@ -111,7 +111,7 @@ async def all(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.respond('__There Is No Proccess On Going @love_birds_group..._')
+    return await event.respond('__There Is No Proccess On Going @xxGRAMZ..._')
   else:
     try:
       spam_chats.remove(event.chat_id)
@@ -119,5 +119,5 @@ async def cancel_spam(event):
       pass
     return await event.respond('__Stopped.__')
 
-print(">> HACKER TAGALL STARTED @love_birds_group<<")
+print(">> HACKER TAGALL STARTED @xxGRAMZ<<")
 client.run_until_disconnected()
