@@ -33,7 +33,7 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nUse /cancel To Stop Tagging in group\n\nFollow [𝐌𝐑.𝐀𝐀𝐑𝐀𝐕_𝐗𝐃](https://t.me/love_birds_group) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
+  helptext = "**Help Menu of TagAllBot**\n\nCommand: /all\n__You can use this command with text what you want to mention others.__\nExample: `/all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nUse /cancel To Stop Tagging in group\n\nFollow [join](https://t.me/xxGRAMZ) 𝗢𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠"
   await event.reply(
     helptext,
     link_preview=False,
@@ -49,7 +49,7 @@ async def help(event):
 async def all(event):
   chat_id = event.chat_id
   if event.is_private:
-    return await event.respond("__This command Can Be Use In Groups And Channels @love_birds_group !__")
+    return await event.respond("__This command Can Be Use In Groups And Channels @xxGRAMZ !__")
   
   is_admin = False
   try:
@@ -71,7 +71,7 @@ async def all(event):
     ):
       is_admin = True
   if not is_admin:
-    return await event.respond("__Only Admins Can Mention All\n\nFor More Go On @love_birds_group !__")
+    return await event.respond("__Only Admins Can Mention All\n\nFor More Go On @xxGRAMZ !__")
   
   if event.pattern_match.group(1) and event.is_reply:
     return await event.respond("__Give me one argument!__")
@@ -84,7 +84,7 @@ async def all(event):
     if msg == None:
         return await event.respond("__I Can't Mention Members For Older Messages! (messages which are sent before I'm added to group)__")
   else:
-    return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade bY @love_birds_group !__")
+    return await event.respond("__Reply To a Message Or Give Me Some Text To Mention Others\n\nMade bY @xxGRAMZ !__")
   
   spam_chats.append(chat_id)
   usrnum = 0
